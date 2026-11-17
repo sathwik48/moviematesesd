@@ -1,71 +1,91 @@
-# MOVIEMATE Movie Ticket Booking
+# MOVIEMATE — Movie Ticket Booking
 
-A responsive movie-booking demo built with HTML, CSS, browser JavaScript, Node.js, Express, and local JSON files. It includes account registration, a hashed-password login, live seat availability, demo checkout, printable tickets, booking cancellation, and an admin movie catalogue.
+MOVIEMATE is a movie ticket booking demo built with Node.js, Express, and a responsive browser-based frontend. It includes a featured movie carousel, movie discovery, account registration and login, seat selection, demo checkout, and booking tickets.
+
+## Features
+
+- **Featured movie carousel:** Shows one movie at a time, starts with Ramayana, and advances every 5.5 seconds. Use the arrows or dots to navigate; autoplay pauses while the carousel is hovered or focused.
+- **Movie catalogue:** Browse, search, and filter movies by genre, language, and release status.
+- **Accounts:** Register and sign in to manage bookings.
+- **Booking flow:** Select a movie, city, cinema, date, showtime, and seats. Seat availability is checked before booking.
+- **Snacks and checkout:** Add snacks, apply available demo coupons, redeem loyalty points, and complete the simulated payment flow.
+- **Tickets and bookings:** View booking confirmations and ticket QR codes, review past bookings, and cancel eligible bookings.
+- **Admin tools:** Manage movies and view bookings with an account that has the `admin` role.
+- **JSON data files:** Movie, user, and booking records are stored in the `data` directory.
+
+The featured carousel uses the existing movie records in `data/movies.json`. Its order is Ramayana, DNK, Jayanth & the Jingo Pen, Chandrayan, Scene, followed by the other available movies. Missing movie metadata is shown as “Not Available.”
 
 ## Requirements
 
-- Node.js 18 or newer
+- Node.js 18 or later
 - npm
+
+No separate database installation is required.
 
 ## Run locally
 
-Open the project folder in VS Code, then run these commands in its terminal:
+From the project directory:
 
-```powershell
+```bash
 npm install
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000). For automatic server restarts while editing, use `npm run dev`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The server creates the demo administrator account on first startup:
+For development with Node's file watcher:
 
-- Email: `admin@cinema.local`
-- Password: `Admin123!`
-
-Register a regular account to make customer bookings. Passwords are hashed with bcrypt before they are stored. Sessions use an HTTP-only cookie. Set `SESSION_SECRET` to a long, random value when running outside a local demo; set `PORT` to change the default port.
-
-## Project structure
-
-```text
-movie-ticket-booking/
-├── data/
-│   ├── bookings.json
-│   ├── movies.json
-│   └── users.json
-├── public/
-│   ├── css/style.css
-│   ├── js/
-│   │   ├── admin.js
-│   │   ├── auth.js
-│   │   ├── booking.js
-│   │   ├── confirmation.js
-│   │   ├── main.js
-│   │   ├── movies.js
-│   │   ├── mybookings.js
-│   │   └── payment.js
-│   ├── admin.html
-│   ├── booking.html
-│   ├── confirmation.html
-│   ├── index.html
-│   ├── login.html
-│   ├── movies.html
-│   ├── mybookings.html
-│   ├── payment.html
-│   └── register.html
-├── package.json
-└── server.js
+```bash
+npm run dev
 ```
 
-## How it works
+The server uses port `3000` by default. Set the `PORT` environment variable to use another port. For example, in PowerShell:
 
-- The Express API serves the static pages and reads/writes movies, user accounts, and bookings in `data/*.json`.
-- The sample catalogue is a snapshot of movies listed as now showing in Warangal; poster files are stored in `public/images/posters/`. These entries are limited to Warangal cinemas for booking. Refresh the catalogue as local listings change.
-- The home page features the nine current Warangal movies, starting with Ramayana, then DNK, Jayanth & the Jingo Pen, Chandrayan, and Scene. Movie details and the poster change together every 5.5 seconds; arrows, dots, and hover pause are available. Booking opens the selected movie's existing booking flow, while View Details jumps to its listing card. Missing catalogue fields display as Not Available.
-- Movie listings support text search and genre, language, and release filters. Cinemas and showtimes are supplied by the API.
-- A booking draft is held in the browser's session storage while the customer selects seats and reaches checkout. The server independently checks the date, movie, cinema, showtime, seat format, payment method, and current seat availability at checkout.
-- Seat selection and booking writes are serialized on the server to prevent concurrent checkouts from selling the same seats. Prices are in Indian rupees (INR) and come from the server's cinema list, not the browser.
-- The payment methods are demo-only. Confirmed tickets have a unique booking ID and can be printed from the confirmation page.
-- Customers can see and cancel their bookings. Cancelled seats become available again. Admins can add, edit, and delete movies and view all bookings.
+```powershell
+$env:PORT = 3001
+npm start
+```
 
-This is a local learning project, not a production payment service. The default Express in-memory session store and JSON-file persistence are intended for a single-process demo, not a multi-instance deployment. Font Awesome and Google Fonts are loaded from their public CDNs; movie imagery uses remote image URLs.
+## Main pages
+
+| Page | Path |
+| --- | --- |
+| Home and featured carousel | `/` |
+| Movie catalogue | `/movies.html` |
+| Booking and seat selection | `/booking.html` |
+| Snacks | `/snacks.html` |
+| Demo payment | `/payment.html` |
+| My bookings | `/mybookings.html` |
+| Sign in / registration | `/login.html` and `/register.html` |
+| Admin | `/admin.html` |
+
+## Project layout
+
+```text
+.
+├── data/                 JSON movie, user, and booking records
+├── public/
+│   ├── css/style.css     Shared styles
+│   ├── images/posters/   Movie poster artwork
+│   ├── js/               Frontend page scripts
+│   └── *.html            Website pages
+├── package.json
+└── server.js             Express server and API
+```
+
+## Data and demo notes
+
+- The movie catalogue is served from `GET /api/movies`.
+- Movie posters are stored under `public/images/posters/`.
+- New users and bookings are written to `data/users.json` and `data/bookings.json`.
+- The payment flow is simulated; it does not charge a real payment method.
+- The app uses JSON-file storage and the default in-memory Express session store. It is intended for local demos and coursework, not production deployment without replacing those storage and session components and configuring a persistent `SESSION_SECRET`.
+
+## Useful API routes
+
+- `GET /api/movies` — list movies; supports search and filter query parameters.
+- `GET /api/cities`, `GET /api/cinemas`, `GET /api/showtimes` — booking options.
+- `GET /api/availability` — booked seats for a selected show.
+- `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout` — account actions.
+- `POST /api/bookings/checkout`, `GET /api/bookings/mine` — create and list bookings.
+- `/api/admin/*` — admin-only movie and booking operations.

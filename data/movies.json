@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ghost-soldier",
+    "title": "Ghost Soldier",
+    "genre": null,
+    "language": "English",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/ghost-soldier.png"
+  },
+  {
+    "id": "dnk",
+    "title": "DNK",
+    "genre": null,
+    "language": "Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/dnk.png"
+  },
+  {
+    "id": "ramayana",
+    "title": "Ramayana",
+    "genre": null,
+    "language": "Hindi, Kannada, Telugu, Tamil, Malayalam",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/ramayana.png"
+  },
+  {
+    "id": "itllu-arjuna",
+    "title": "Itllu Arjuna",
+    "genre": null,
+    "language": "Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/itllu-arjuna.png"
+  },
+  {
+    "id": "scene",
+    "title": "Scene",
+    "genre": null,
+    "language": "Tamil, Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/scene.png"
+  },
+  {
+    "id": "goat",
+    "title": "G.O.A.T",
+    "genre": null,
+    "language": "Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/goat.png"
+  },
+  {
+    "id": "chandrayan",
+    "title": "Chandrayan",
+    "genre": null,
+    "language": "Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/chandrayan.png"
+  },
+  {
+    "id": "jayannth-jingo-pen",
+    "title": "Jayanth & the Jingo Pen",
+    "genre": null,
+    "language": "Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/jayannth-jingo-pen.png"
+  },
+  {
+    "id": "maya-lady",
+    "title": "Maya Lady",
+    "genre": null,
+    "language": "Telugu",
+    "city": "Warangal",
+    "duration": null,
+    "rating": null,
+    "releaseType": "now",
+    "description": "Currently listed in Warangal.",
+    "poster": "/images/posters/maya-lady.png"
+  }
+]

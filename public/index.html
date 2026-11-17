@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c14">
+  <title>MOVIEMATE — your night starts here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ticket"></i></span><span>MOVIEMATE</span></a><nav class="nav-links"><a class="active" href="/">Home</a><a href="/movies.html">Movies</a><a href="/mybookings.html">My bookings</a><a href="/admin.html" class="admin-link hidden">Admin</a><span class="auth-links"><a href="/login.html">Login</a><a class="nav-register" href="/register.html">Register</a></span><span class="user-links hidden"><span class="user-greeting"></span><button class="link-button logout-button">Log out</button></span></nav><button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button></header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-copy featured-movie-details" id="home-feature-details">
+          <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> THE BIG SCREEN IS CALLING</span>
+          <h1 id="featured-movie-title">Ramayana</h1>
+          <p class="featured-tagline" id="featured-movie-tagline">Not Available</p>
+          <p class="featured-rating" id="featured-movie-rating"><i class="fa-solid fa-star" aria-hidden="true"></i><strong>Not Available</strong></p>
+          <div class="featured-facts">
+            <div class="featured-fact"><span>Genre</span><strong id="featured-movie-genre">Not Available</strong></div>
+            <div class="featured-fact"><span>Language</span><strong id="featured-movie-language">Hindi, Kannada, Telugu, Tamil, Malayalam</strong></div>
+            <div class="featured-fact"><span>Duration</span><strong id="featured-movie-duration">Not Available</strong></div>
+            <div class="featured-fact"><span>Release date</span><strong id="featured-movie-release-date">Not Available</strong></div>
+          </div>
+          <p class="featured-description" id="featured-movie-description">Not Available</p>
+          <p class="featured-status" id="featured-movie-status">Now Showing</p>
+          <div class="featured-actions">
+            <a class="btn btn-primary" id="featured-movie-booking" href="/booking.html?movie=ramayana">Book Tickets <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-ghost" id="featured-movie-details" href="/movies.html#movie-ramayana">View Details</a>
+          </div>
+        </div>
+        <section class="hero-showcase" aria-label="Featured movie poster">
+          <div id="home-carousel" class="carousel-viewport">
+            <a id="home-feature-poster" class="featured-poster" href="/booking.html?movie=ramayana" aria-label="Book tickets for Ramayana">
+              <img id="featured-movie-poster" src="/images/posters/ramayana.png" alt="Ramayana poster" fetchpriority="high">
+            </a>
+          </div>
+          <div class="featured-controls" role="group" aria-label="Featured movie navigation">
+            <button type="button" class="featured-arrow" id="featured-previous" aria-label="Previous movie"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+            <div class="featured-dots" id="featured-dots" role="group" aria-label="Choose a featured movie"></div>
+            <button type="button" class="featured-arrow" id="featured-next" aria-label="Next movie"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+          <p class="carousel-hint">Changes every 5.5 seconds</p>
+        </section>
+      </div>
+    </section>
+    <section class="section-wrap"><div class="section-heading"><div><span class="eyebrow">BOOKMYSHOW WARANGAL LISTING</span><h2>Now showing in Warangal <span class="heading-dot">.</span></h2></div><a class="text-link" href="/movies.html">See all movies <i class="fa-solid fa-arrow-right"></i></a></div><div id="home-now" class="movie-grid"></div></section>
+    <section class="section-wrap upcoming-section"><div class="section-heading"><div><span class="eyebrow">COMING SOON</span><h2>On the horizon <span class="heading-dot">.</span></h2></div></div><div id="home-upcoming" class="movie-grid"></div></section>
+    <section class="experience-banner"><div class="experience-icon"><i class="fa-solid fa-couch"></i></div><div><span class="eyebrow">THE PERFECT NIGHT OUT</span><h2>Good seats. Great company. Unforgettable stories.</h2></div><a class="btn btn-primary" href="/movies.html">Find your movie</a></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ticket"></i></span><span>MOVIEMATE</span></a><p>Your seat to the stories you love.</p><small>© 2026 MOVIEMATE. A movie booking demo.</small></footer>
+  <script src="/js/main.js"></script><script>window.addEventListener("DOMContentLoaded", () => loadHomeMovies());</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <title>Payment — MOVIEMATE</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ticket"></i></span><span>MOVIEMATE</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a><a href="/movies.html">Movies</a><a href="/mybookings.html">My bookings</a>
+      <span class="auth-links"><a href="/login.html">Login</a><a class="nav-register" href="/register.html">Register</a></span>
+      <span class="user-links hidden"><span class="user-greeting"></span><button class="link-button logout-button">Log out</button></span>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
+  <main class="section-wrap payment-page">
+    <div class="page-title">
+      <span class="eyebrow">ALMOST THERE</span>
+      <h1>Review & pay</h1>
+      <p class="muted">Demo checkout only. No real payment will be taken.</p>
+    </div>
+    <div id="payment-alert" class="alert hidden" role="alert"></div>
+    <div class="payment-layout">
+      <section class="booking-panel">
+        <h2><span class="step-number">01</span> Payment method</h2>
+        <form id="payment-form" novalidate>
+          <div class="payment-options">
+            <label class="payment-option"><input type="radio" name="paymentMethod" value="upi" checked><span class="payment-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span><strong>UPI</strong><small>Pay using your UPI app</small></span><i class="fa-solid fa-circle-check option-check"></i></label>
+            <label class="payment-option"><input type="radio" name="paymentMethod" value="card"><span class="payment-icon"><i class="fa-regular fa-credit-card"></i></span><span><strong>Card</strong><small>Credit or debit card</small></span><i class="fa-solid fa-circle-check option-check"></i></label>
+            <label class="payment-option"><input type="radio" name="paymentMethod" value="netbanking"><span class="payment-icon"><i class="fa-solid fa-building-columns"></i></span><span><strong>Net banking</strong><small>Pay through your bank</small></span><i class="fa-solid fa-circle-check option-check"></i></label>
+          </div>
+          <div id="payment-method-details" class="payment-method-details"></div>
+          <section class="checkout-extras">
+            <h3><i class="fa-solid fa-ticket"></i> Offers & rewards</h3>
+            <p class="small-muted">Try <strong>REEL10</strong> (10% off, up to ₹200) or <strong>MOVIE50</strong> (₹50 off orders of ₹500+).</p>
+            <div class="coupon-entry">
+              <label for="coupon-code">Coupon code</label>
+              <div class="inline-entry"><input id="coupon-code" type="text" autocomplete="off" placeholder="Enter coupon code"><button id="apply-coupon" class="btn btn-ghost" type="button">Apply</button></div>
+              <p id="coupon-message" class="checkout-message" aria-live="polite"></p>
+            </div>
+            <div class="points-entry">
+              <div><strong><i class="fa-solid fa-star"></i> Your points: <span id="available-points">0</span></strong><p class="small-muted">100 welcome points · Earn 1 point per ₹10 spent.</p></div>
+              <label for="redeem-points">Redeem points (₹1 each)</label>
+              <div class="inline-entry"><input id="redeem-points" type="number" min="0" step="1" value="0" inputmode="numeric"><button id="apply-points" class="btn btn-ghost" type="button">Redeem</button></div>
+              <p id="points-message" class="checkout-message" aria-live="polite"></p>
+            </div>
+          </section>
+          <p class="demo-note"><i class="fa-solid fa-circle-info"></i> Demo payment only. Card details are never sent or stored.</p>
+          <button id="pay-button" class="btn btn-primary btn-wide" type="submit">Continue with UPI <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </section>
+      <aside class="booking-summary">
+        <span class="eyebrow">BOOKING SUMMARY</span>
+        <div id="payment-summary"></div>
+        <p class="summary-note"><i class="fa-solid fa-lock"></i> Secure demo checkout</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><small>© 2026 MOVIEMATE.</small></footer>
+  <script src="/js/main.js"></script>
+  <script src="/js/payment.js"></script>
+</body>
+</html>

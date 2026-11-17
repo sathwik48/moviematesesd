@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090b12">
+  <title>Movies — MOVIEMATE</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ticket"></i></span><span>MOVIEMATE</span></a><nav class="nav-links"><a href="/">Home</a><a class="active" href="/movies.html">Movies</a><a href="/mybookings.html">My bookings</a><a href="/admin.html" class="admin-link hidden">Admin</a><span class="auth-links"><a href="/login.html">Login</a><a class="nav-register" href="/register.html">Register</a></span><span class="user-links hidden"><span class="user-greeting"></span><button class="link-button logout-button">Log out</button></span></nav><button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button></header>
+  <main><section class="page-hero"><span class="eyebrow">FIND YOUR NEXT FAVORITE</span><h1>All the movies.<br><span>One great night.</span></h1><p>Pick a film, find your cinema, and we’ll save you a seat.</p></section>
+    <section class="section-wrap movies-list-section"><div class="filters"><label class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input id="movie-search" type="search" placeholder="Search movies, genres, languages..." aria-label="Search movies"></label><select id="genre-filter" aria-label="Filter by genre"><option value="">All genres</option></select><select id="language-filter" aria-label="Filter by language"><option value="">All languages</option></select><select id="release-filter" aria-label="Filter by release"><option value="">All movies</option><option value="now">Now showing</option><option value="upcoming">Coming soon</option></select></div><p id="movie-count" class="result-count"></p><div id="movies-list" class="movie-grid"></div><div id="movies-empty" class="empty-state hidden"><i class="fa-solid fa-film"></i><h3>No movies found</h3><p>Try changing your search or filters.</p></div></section>
+  </main><footer class="site-footer"><a class="brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ticket"></i></span><span>MOVIEMATE</span></a><p>Your seat to the stories you love.</p><small>© 2026 MOVIEMATE. A movie booking demo.</small></footer>
+  <script src="/js/main.js"></script><script src="/js/movies.js"></script>
+</body></html>

@@ -1,0 +1,441 @@
+[
+  {
+    "id": "CIN-DB4E4168",
+    "userId": "efec53ec-a872-4f78-8a3f-e85110f49fbe",
+    "userName": "sathwik",
+    "movieId": "midnight-chase",
+    "movieTitle": "Midnight Chase",
+    "poster": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "grand-cinema",
+    "cinemaName": "Grand Cinema",
+    "cinemaLocation": "Downtown",
+    "date": "2026-11-06",
+    "time": "17:15",
+    "seats": [
+      "A1",
+      "F3",
+      "F4",
+      "G3",
+      "H5"
+    ],
+    "total": 62.5,
+    "paymentMethod": "upi",
+    "status": "cancelled",
+    "createdAt": "2026-11-06T07:45:36.863Z",
+    "cancelledAt": "2026-11-06T07:45:46.940Z"
+  },
+  {
+    "id": "CIN-25B79E3F",
+    "userId": "efec53ec-a872-4f78-8a3f-e85110f49fbe",
+    "userName": "sathwik",
+    "movieId": "starlight-run",
+    "movieTitle": "The Starlight Run",
+    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "grand-cinema",
+    "cinemaName": "Grand Cinema",
+    "cinemaLocation": "Downtown",
+    "date": "2026-11-06",
+    "time": "17:15",
+    "seats": [
+      "B6",
+      "B7"
+    ],
+    "total": 500,
+    "paymentMethod": "upi",
+    "status": "cancelled",
+    "createdAt": "2026-11-06T07:49:00.808Z",
+    "cancelledAt": "2026-11-06T07:49:09.919Z"
+  },
+  {
+    "id": "CIN-1EF225B4",
+    "userId": "efec53ec-a872-4f78-8a3f-e85110f49fbe",
+    "userName": "sathwik",
+    "movieId": "last-summer",
+    "movieTitle": "The Last Summer",
+    "poster": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "grand-cinema",
+    "cinemaName": "Grand Cinema",
+    "cinemaLocation": "Downtown",
+    "date": "2026-11-06",
+    "time": "17:15",
+    "seats": [
+      "G3",
+      "G4",
+      "H3",
+      "H4"
+    ],
+    "total": 1000,
+    "paymentMethod": "debit-card",
+    "status": "confirmed",
+    "createdAt": "2026-11-06T09:14:27.136Z"
+  },
+  {
+    "id": "CIN-A22FA7E3",
+    "userId": "efec53ec-a872-4f78-8a3f-e85110f49fbe",
+    "userName": "sathwik",
+    "movieId": "starlight-run",
+    "movieTitle": "The Starlight Run",
+    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "grand-cinema",
+    "cinemaName": "Grand Cinema",
+    "cinemaLocation": "Downtown",
+    "date": "2026-11-10",
+    "time": "10:30",
+    "seats": [
+      "A8",
+      "A9"
+    ],
+    "total": 500,
+    "paymentMethod": "upi",
+    "status": "confirmed",
+    "createdAt": "2026-11-10T04:38:57.075Z"
+  },
+  {
+    "id": "CIN-0319D2D1",
+    "userId": "efec53ec-a872-4f78-8a3f-e85110f49fbe",
+    "userName": "sathwik",
+    "movieId": "paper-moons",
+    "movieTitle": "Paper Moons",
+    "poster": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "northstar-theatre",
+    "cinemaName": "Northstar Theatre",
+    "cinemaLocation": "Uptown",
+    "date": "2026-11-11",
+    "time": "20:30",
+    "seats": [
+      "E7"
+    ],
+    "total": 200,
+    "paymentMethod": "upi",
+    "status": "confirmed",
+    "createdAt": "2026-11-11T05:09:53.093Z"
+  },
+  {
+    "id": "CIN-72268736",
+    "userId": "aaf26842-84a5-49b5-98b0-0bc77341d680",
+    "userName": "Cinema Admin",
+    "movieId": "pushpa-2",
+    "movieTitle": "Pushpa 2: The Rule",
+    "poster": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "pvr-warangal",
+    "cinemaName": "PVR Cinemas",
+    "cinemaLocation": "Warangal",
+    "date": "2026-11-20",
+    "time": "10:00",
+    "seats": [
+      "A1",
+      "A2"
+    ],
+    "foodItems": [
+      {
+        "id": "regular-tea",
+        "category": "TEA AND COFFEE",
+        "name": "Regular Tea",
+        "price": 20,
+        "quantity": 2
+      },
+      {
+        "id": "small-popcorn",
+        "category": "POPCORN",
+        "name": "Small Popcorn",
+        "price": 80,
+        "quantity": 1
+      }
+    ],
+    "foodTotal": 120,
+    "ticketTotal": 520,
+    "total": 640,
+    "paymentMethod": "upi",
+    "status": "confirmed",
+    "createdAt": "2026-11-11T05:28:52.665Z"
+  },
+  {
+    "id": "CIN-8FDD4786",
+    "userId": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "userName": "Sathwik Modem",
+    "movieId": "hanu-man",
+    "movieTitle": "Hanu-Man",
+    "poster": "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "kakatiya-theatre",
+    "cinemaName": "Kakatiya Theatre",
+    "cinemaLocation": "Warangal",
+    "date": "2026-11-11",
+    "time": "22:15",
+    "seats": [
+      "A2",
+      "A3"
+    ],
+    "foodItems": [
+      {
+        "id": "coffee",
+        "category": "TEA AND COFFEE",
+        "name": "Coffee",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "id": "medium-popcorn",
+        "category": "POPCORN",
+        "name": "Medium Popcorn",
+        "price": 120,
+        "quantity": 1
+      },
+      {
+        "id": "pizza",
+        "category": "SNACKS",
+        "name": "Pizza",
+        "price": 180,
+        "quantity": 1
+      },
+      {
+        "id": "coke",
+        "category": "JUICES AND DRINKS",
+        "name": "Coke",
+        "price": 60,
+        "quantity": 2
+      },
+      {
+        "id": "water-bottle",
+        "category": "JUICES AND DRINKS",
+        "name": "Water Bottle",
+        "price": 30,
+        "quantity": 1
+      }
+    ],
+    "foodTotal": 490,
+    "ticketTotal": 400,
+    "total": 890,
+    "paymentMethod": "debit-card",
+    "status": "confirmed",
+    "createdAt": "2026-11-11T05:32:41.297Z"
+  },
+  {
+    "id": "CIN-2BBB701F",
+    "userId": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "userName": "Sathwik Modem",
+    "movieId": "ramayana-telugu",
+    "movieTitle": "Ramayana (Telugu)",
+    "poster": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "asian-sridevi-mall",
+    "cinemaName": "Asian Sridevi Mall",
+    "cinemaLocation": "Warangal",
+    "date": "2026-12-04",
+    "time": "19:30",
+    "seats": [
+      "A3",
+      "A4"
+    ],
+    "foodItems": [
+      {
+        "id": "regular-tea",
+        "category": "TEA AND COFFEE",
+        "name": "Regular Tea",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "id": "water-bottle",
+        "category": "JUICES AND DRINKS",
+        "name": "Water Bottle",
+        "price": 30,
+        "quantity": 1
+      }
+    ],
+    "foodTotal": 50,
+    "ticketTotal": 440,
+    "total": 490,
+    "paymentMethod": "credit-card",
+    "status": "confirmed",
+    "createdAt": "2026-11-11T05:40:03.585Z"
+  },
+  {
+    "id": "CIN-87A9B353",
+    "userId": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "userName": "Sathwik Modem",
+    "movieId": "fauzi",
+    "movieTitle": "Fauzi",
+    "poster": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "pvr-warangal",
+    "cinemaName": "PVR Cinemas",
+    "cinemaLocation": "Warangal",
+    "date": "2026-11-19",
+    "time": "19:30",
+    "seats": [
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "foodItems": [],
+    "foodTotal": 0,
+    "ticketTotal": 1820,
+    "subtotal": 1820,
+    "couponCode": "",
+    "couponDiscount": 0,
+    "pointsRedeemed": 238,
+    "pointsDiscount": 238,
+    "pointsEarned": 158,
+    "total": 1582,
+    "paymentMethod": "upi",
+    "bankName": "",
+    "status": "confirmed",
+    "createdAt": "2026-11-11T05:54:32.961Z"
+  },
+  {
+    "id": "CIN-7FB1271B",
+    "userId": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "userName": "Sathwik Modem",
+    "movieId": "starlight-run",
+    "movieTitle": "The Starlight Run",
+    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "pvr-hyderabad",
+    "cinemaName": "PVR Cinemas",
+    "cinemaLocation": "Hyderabad",
+    "date": "2026-11-11",
+    "time": "13:30",
+    "seats": [
+      "A7",
+      "A8",
+      "A9"
+    ],
+    "foodItems": [
+      {
+        "id": "regular-tea",
+        "category": "TEA AND COFFEE",
+        "name": "Regular Tea",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "id": "coffee",
+        "category": "TEA AND COFFEE",
+        "name": "Coffee",
+        "price": 40,
+        "quantity": 1
+      },
+      {
+        "id": "small-popcorn",
+        "category": "POPCORN",
+        "name": "Small Popcorn",
+        "price": 80,
+        "quantity": 1
+      }
+    ],
+    "foodTotal": 140,
+    "ticketTotal": 840,
+    "subtotal": 980,
+    "couponCode": "",
+    "couponDiscount": 0,
+    "pointsRedeemed": 0,
+    "pointsDiscount": 0,
+    "pointsEarned": 98,
+    "total": 980,
+    "paymentMethod": "upi",
+    "bankName": "",
+    "status": "confirmed",
+    "createdAt": "2026-11-11T05:59:36.320Z"
+  },
+  {
+    "id": "CIN-89B2381A",
+    "userId": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "userName": "Sathwik Modem",
+    "movieId": "starlight-run",
+    "movieTitle": "The Starlight Run",
+    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=700&q=85",
+    "cinemaId": "pvr-warangal",
+    "cinemaName": "PVR Cinemas",
+    "cinemaLocation": "Warangal",
+    "date": "2026-11-17",
+    "time": "13:30",
+    "seats": [
+      "H4",
+      "H5"
+    ],
+    "foodItems": [
+      {
+        "id": "small-popcorn",
+        "category": "POPCORN",
+        "name": "Small Popcorn",
+        "price": 80,
+        "quantity": 1
+      },
+      {
+        "id": "water-bottle",
+        "category": "JUICES AND DRINKS",
+        "name": "Water Bottle",
+        "price": 30,
+        "quantity": 1
+      }
+    ],
+    "foodTotal": 110,
+    "ticketTotal": 520,
+    "subtotal": 630,
+    "couponCode": "",
+    "couponDiscount": 0,
+    "pointsRedeemed": 0,
+    "pointsDiscount": 0,
+    "pointsEarned": 63,
+    "total": 630,
+    "paymentMethod": "upi",
+    "bankName": "",
+    "status": "confirmed",
+    "createdAt": "2026-11-17T04:21:13.427Z"
+  },
+  {
+    "id": "CIN-D628CD3E",
+    "userId": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "userName": "Sathwik Modem",
+    "movieId": "ramayana",
+    "movieTitle": "Ramayana",
+    "poster": "/images/posters/ramayana.png",
+    "cinemaId": "pvr-warangal",
+    "cinemaName": "PVR Cinemas",
+    "cinemaLocation": "Warangal",
+    "date": "2026-11-17",
+    "time": "10:00",
+    "seats": [
+      "H3",
+      "H4",
+      "H5"
+    ],
+    "foodItems": [
+      {
+        "id": "regular-tea",
+        "category": "TEA AND COFFEE",
+        "name": "Regular Tea",
+        "price": 20,
+        "quantity": 1
+      },
+      {
+        "id": "ginger-tea",
+        "category": "TEA AND COFFEE",
+        "name": "Ginger Tea",
+        "price": 30,
+        "quantity": 1
+      },
+      {
+        "id": "caramel-popcorn",
+        "category": "POPCORN",
+        "name": "Caramel Popcorn",
+        "price": 170,
+        "quantity": 1
+      }
+    ],
+    "foodTotal": 220,
+    "ticketTotal": 780,
+    "subtotal": 1000,
+    "couponCode": "",
+    "couponDiscount": 0,
+    "pointsRedeemed": 0,
+    "pointsDiscount": 0,
+    "pointsEarned": 100,
+    "total": 1000,
+    "paymentMethod": "upi",
+    "bankName": "",
+    "status": "confirmed",
+    "createdAt": "2026-11-17T05:37:59.504Z"
+  }
+]

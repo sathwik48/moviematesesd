@@ -1,0 +1,23 @@
+[
+  {
+    "id": "aaf26842-84a5-49b5-98b0-0bc77341d680",
+    "name": "Cinema Admin",
+    "email": "admin@cinema.local",
+    "passwordHash": "$2a$12$jYEi3TFtl8bHGoaJ8REqJ.Yid8hYruyyVmfV6CiPZv5jn9aI4fpFe",
+    "role": "admin"
+  },
+  {
+    "id": "efec53ec-a872-4f78-8a3f-e85110f49fbe",
+    "name": "sathwik",
+    "email": "sathwik@gmail.com",
+    "passwordHash": "$2a$12$rOCIMY5MmhYxcC/GwZn6rO5pFS5XSUDcDjWznDpaV.oXA6X7wsg4a",
+    "role": "user"
+  },
+  {
+    "id": "e7d9a975-0d99-4c27-9934-827037e0c395",
+    "name": "Sathwik Modem",
+    "email": "2403a51048@sru.edu.in",
+    "passwordHash": "$2a$12$IJCgOANVZDWhWI7JRi/ove/spi5V/rnPiqwdR5y57Js2e56d2OYuG",
+    "role": "user"
+  }
+]

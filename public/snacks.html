@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <title>Snacks — MOVIEMATE</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ticket"></i></span><span>MOVIEMATE</span></a><nav class="nav-links"><a href="/">Home</a><a href="/movies.html">Movies</a><a href="/mybookings.html">My bookings</a><a href="/admin.html" class="admin-link hidden">Admin</a><span class="auth-links"><a href="/login.html">Login</a><a class="nav-register" href="/register.html">Register</a></span><span class="user-links hidden"><span class="user-greeting"></span><button class="link-button logout-button">Log out</button></span></nav><button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button></header>
+  <main class="section-wrap payment-page">
+    <div class="page-title">
+      <span class="eyebrow">ORDER YOUR FAVOURITE SNACKS</span>
+      <h1>Add a little extra.</h1>
+      <p class="muted">Pick your favourite bites and drinks before checkout.</p>
+    </div>
+    <div id="snacks-alert" class="alert hidden" role="alert"></div>
+    <div class="payment-layout">
+      <section class="booking-panel">
+        <div id="snacks-list" class="food-section"></div>
+        <button id="continue-to-payment" class="btn btn-primary btn-wide" type="button">Continue to payment <i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+      <aside class="booking-summary">
+        <span class="eyebrow">ORDER SUMMARY</span>
+        <div id="snack-summary"></div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><small>© 2026 MOVIEMATE.</small></footer>
+  <script src="/js/main.js"></script>
+  <script src="/js/snacks.js"></script>
+</body>
+</html>
